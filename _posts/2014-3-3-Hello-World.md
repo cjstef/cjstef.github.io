@@ -48,6 +48,4 @@ Finally, while we are confident with the results we obtained from the analysis o
 
 Project Benson was a fantastic opportunity to get our hands dirty with some real data. It highlighted the usefulness and versatility of the pandas and matplotlib libraries, the importance of using git/github when collaborating on a project, and forced our team to think quantitatively as well as make some subjective decisions. I am pleased with our work and look forward to future projects as I continue to learn the ins and outs of data science.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
