@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Industrial Engineering graduate from Georgia Tech pursuing a career in data science. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Metis Data Science Bootcamp Student January - April '17
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[connorstefan1@gmail.com](mailto:connorstefan1@gmail.com)
