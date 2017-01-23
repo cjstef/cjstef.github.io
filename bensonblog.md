@@ -1,7 +1,5 @@
----
-layout: post
-title: Blog Post 1: First Week thoughts + Project Benson
----
+
+#First Week thoughts + Project Benson
 
 ## First Week at Metis
 
