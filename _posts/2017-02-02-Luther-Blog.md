@@ -38,8 +38,6 @@ An important aspect of refining the model was feature transformation. However, g
 
 ## Part IV - Prediction
 
--include picture/go back and make better graph of prediction-
-
 While the final model only boasted an adjusted R squared value of slightly over .5, the predictions turned out very well. The model correctly projected 10 of the 12 teams to reach the playoffs in 2016, and also the super bowl champion, the New England Patriots, had the highest projected playoff round of any team. A table detailing model predictions and the real results is included below.
 
 | Team (Top 12) | Model Projection  | Actual Result  |
