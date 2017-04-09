@@ -1,4 +1,7 @@
-### In this post: supervised machine learning classification, understanding feature types and feature engineering, metrics for model scoring
+### In this post: 
+* supervised machine learning classification
+* understanding feature types and feature engineering
+* metrics for model scoring
 
 For my third project at Metis, dubbed "McNulty", I decided to take a bit of a different approach, as I wanted to focus on expanding my understanding of the various classification algorithms. I selected a clean dataset from the [UCI machine learning repository](http://archive.ics.uci.edu/ml/) composed of economic and demographic information for individuals collected by the US Census in the mid nineties. The target variable was binary, denoted “income class” and defined as being either high income (> $50,000) or low income (<$50,000).
 
