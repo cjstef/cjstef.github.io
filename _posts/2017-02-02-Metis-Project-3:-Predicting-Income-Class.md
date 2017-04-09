@@ -1,5 +1,3 @@
-# Metis Project 3 - Predicting Income Class
-
 ### In this post: supervised machine learning classification, understanding feature types and feature engineering, metrics for model scoring
 
 For my third project at Metis, dubbed "McNulty", I decided to take a bit of a different approach, as I wanted to focus on expanding my understanding of the various classification algorithms. I selected a clean dataset from the [UCI machine learning repository](http://archive.ics.uci.edu/ml/) composed of economic and demographic information for individuals collected by the US Census in the mid nineties. The target variable was binary, denoted “income class” and defined as being either high income (> $50,000) or low income (<$50,000).
@@ -10,7 +8,7 @@ The first approach I tried to convert the categorical variables into something u
 
 #### Dummy Variable Example:
 
-![alt text](https://github.com/cjstef/cjstef.github.io/blob/master/images/blog3get_dummies.png)
+![alt text](https://github.com/cjstef/cjstef.github.io/blob/master/images/blog3get_dummies.png?raw=true)
 
 Note that, as is the case in observation 3, if all of the “dummy” variables are set to off, it is assumed to be the base case, typically the most common value of the categorical value set. In this example, this would imply the person’s race is “white”. This is convention to eliminate redundancy in information, since the state of all dummy variables being 0 can be considered a unique state, and thus is chosen to represent the remaining case.
 
@@ -22,9 +20,9 @@ After further reducing the feature space, I had the model simplified to a point 
 
 Finally, it was time to test the models. I elected to try five different classifiers: Logistic Regression, Guassian Naive Bayes <sup>[2]</sup>, K-Nearest-Neighbors, LinearSVC, and Random Forest. The resulting Accuracy, Recall, Precision, and F-1 Scores are detailed in the table below, along with the Receiver Operating Characteristic Curves for the applicable classifiers.
 
-![alt text](https://github.com/cjstef/cjstef.github.io/blob/master/images/proj3_model_scores.png)
+![alt text](https://github.com/cjstef/cjstef.github.io/blob/master/images/proj3_model_scores.png?raw=true)
 
-![alt text](https://github.com/cjstef/cjstef.github.io/blob/master/images/roc_curve.png)
+![alt text](https://github.com/cjstef/cjstef.github.io/blob/master/images/roc_curve.png?raw=true)
 
 The random forest classifier performed slightly better than the other four during testing. The resulting confusion matrix for the RF is below. For comparison purposes, the benchmark naive classifier (defined as simply predicting “low income” for every data point) had a roughly 75% accuracy given that approximately 3 out of 4 observations were classified as “low income”. Thus, our model achieves a significant advantage over the baseline, and we can infer that there is a degree of predictive power in our features.
 
