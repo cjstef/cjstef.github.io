@@ -5,7 +5,9 @@
 
 My fourth project at Metis proved to be my favorite endeavor. Following a week of classroom lectures introducing us to [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing), I began toying with the idea of constructing a chatbot as a fun way of exploring and developing my understanding of the plethora of NLP libraries. 
 
-As it turns out, both text and speech based chatbots are quite popular these days, and are deployed with some regularity in online customer support roles by many larger companies. After doing a bit of research on the subject, I discovered a few things. First, there are several different types of chatbots which each cater to a certain task. The image below provides a nice overview, and the corresponding [blog] offers some more detail.
+As it turns out, both text and speech based chatbots are quite popular these days, and are deployed with some regularity in online customer support roles by many larger companies. After doing a bit of research on the subject, I discovered a few things. First, there are several different types of chatbots which each cater to a certain task. The image below provides a nice overview, and the corresponding [blog](http://botnerds.com/types-of-bots/) offers some more detail.
+
+![alt text](https://github.com/cjstef/cjstef.github.io/blob/master/images/chatbotblog/proj4chatbotdiagram.png?raw=True)
 
 Second, there seemed to be one big challenge chatbots struggled to overcome: emulating a human personality. I set out to develop mine with the intention of tackling this problem, and also the secondary goal of generating new responses (as opposed to explicitly programmed ones) whilst also maintaining some semblence of grammatical structure.
 
@@ -27,7 +29,7 @@ Imagine we are trying to predict the next day's weather, and the options (states
 
 The diagram below depicts the 'state space', which defines the transition probabilities between the states of our markov chain.
 
-[image of markov chain]
+![alt text](https://github.com/cjstef/cjstef.github.io/blob/master/images/chatbotblog/markovchainex.png?raw=True)
 
 Markov Chains have many useful applications, and proved to be a good candidate for a baseline approach to create CartmanBot 1.0.
 
@@ -35,13 +37,13 @@ I began by looking for a markov chain library in python, and stumbled across [py
 
 The code snippet below provides a simplistic example of how the final product worked. Note that the values for each dictionary key are 'weighted' in the sense that certain words appear more often in the list of values, and thus reflect transition states with higher probabilities relative to the other words in the list.
 
-[code snip]
+![alt text](https://github.com/cjstef/cjstef.github.io/blob/master/images/chatbotblog/markovchainexcode.png?raw=True)
 
 The code for the actual model looks very similar, except that instead of singular words I used a [bi-grams](https://en.wikipedia.org/wiki/Bigram) approach with the help of the [NLTK](http://www.nltk.org/book/ch01.html) library. Each unique word in the dataset of 130k total words was stored as a dictionary key, and the corresponding values were appended as word-pairs that followed the unique key word at any point in the corpus of text.
 
-The result was a surprisingly coherent bot that certainly captured the essence of Cartman:
+The result was a surprisingly coherent bot that certainly captured the essence of Cartman (warning - NSFW language!):
 
-[cartmanbot image]
+![alt text](https://github.com/cjstef/cjstef.github.io/blob/master/images/chatbotblog/cartmanbot.png?raw=True)
 
 ### LSTM Approach with Word2Vec and Doc2Vec
 
@@ -51,7 +53,7 @@ LSTM's are a significantly more complex approach <sup>[2]</sup>, and as with all
 
 I wanted to implement a conversational component to compliment the generative gibberish CartmanBot was currently limited to. The plan I developed was as such:
 
-#### Using [Doc2Vec](https://deeplearning4j.org/doc2vec)
+#### Using [Doc2Vec](https://deeplearning4j.org/doc2vec) from Gensim
 
 1. Embed each line immediately preceding a line spoken by Cartman from the dialogue corpus as a vector representing the aggregate scores of the words in that line
 2. Allow the user to input a phrase or ask a question and convert to another vector the same way
