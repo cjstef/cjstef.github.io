@@ -68,6 +68,7 @@ This project was a great introduction to the awesome capabilities (and occasiona
 You can find the jupyter notebook with my code for CartmanBot [here](https://github.com/cjstef/MetisProjects/blob/master/Proj4.ipynb)
 
 [1] Some great additional reading on markov chains [resource](http://setosa.io/ev/markov-chains/) 
+
 [2] More info on [LTSM's](http://lauragelston.ghost.io/speakeasy-pt2/0) and their applications for chatbots
 
 
