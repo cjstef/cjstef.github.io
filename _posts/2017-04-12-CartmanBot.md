@@ -3,7 +3,7 @@
 * applying [markov chains](https://en.wikipedia.org/wiki/Markov_chain) for modeling stochastic processes
 * exploring the capabilities of neural networks with Google's [Word2Vec](https://en.wikipedia.org/wiki/Word2vec)
 
-My fourth project at Metis proved to be my favorite endeavor. Following a week of classroom lectures introducing us to [Natural Language Processing], I began toying with the idea of constructing a chatbot as a fun way of exploring and developing my understanding of the plethora of NLP libraries. 
+My fourth project at Metis proved to be my favorite endeavor. Following a week of classroom lectures introducing us to [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing), I began toying with the idea of constructing a chatbot as a fun way of exploring and developing my understanding of the plethora of NLP libraries. 
 
 As it turns out, both text and speech based chatbots are quite popular these days, and are deployed with some regularity in online customer support roles by many larger companies. After doing a bit of research on the subject, I discovered a few things. First, there are several different types of chatbots which each cater to a certain task. The image below provides a nice overview, and the corresponding [blog] offers some more detail.
 
